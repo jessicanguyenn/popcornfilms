@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/popcornfilms/static/css/main.2b74accf.css",
+    "main.js": "/popcornfilms/static/js/main.8a022611.js",
+    "static/media/the-texas-chainsaw-massacre-poster.jpg": "/popcornfilms/static/media/the-texas-chainsaw-massacre-poster.d8ca978aa3e787bf6bc1.jpg",
+    "static/media/us-poster.jpg": "/popcornfilms/static/media/us-poster.dfc0ecea5d330a2e6291.jpg",
+    "static/media/the-social-network-poster.jpg": "/popcornfilms/static/media/the-social-network-poster.cb16896387d42d5527e4.jpg",
+    "static/media/spider-man-no-way-home-poster.jpg": "/popcornfilms/static/media/spider-man-no-way-home-poster.1e63f766f682201ab2b4.jpg",
+    "static/media/before-sunrise-poster.jpg": "/popcornfilms/static/media/before-sunrise-poster.1507d66e358fe5532462.jpg",
+    "static/media/ferris-bueller-screencap.jpg": "/popcornfilms/static/media/ferris-bueller-screencap.1d833ef32bf8736f2ac4.jpg",
+    "static/media/the-notebook-poster.jpg": "/popcornfilms/static/media/the-notebook-poster.c5045e7943c6de37e501.jpg",
+    "static/media/top-gun-poster.jpg": "/popcornfilms/static/media/top-gun-poster.18ac80803a3ba5bbdccd.jpg",
+    "static/media/before-sunrise-screencap.jpg": "/popcornfilms/static/media/before-sunrise-screencap.461521ef42163814684d.jpg",
+    "static/media/brokeback-mountain-poster.jpg": "/popcornfilms/static/media/brokeback-mountain-poster.4ce24c697ae5fda6b050.jpg",
+    "static/media/mean-girls-poster.jpg": "/popcornfilms/static/media/mean-girls-poster.a13e800c94c903cbb207.jpg",
+    "static/media/dune-screencap.jpg": "/popcornfilms/static/media/dune-screencap.e515862304fbd8718a34.jpg",
+    "static/media/ferris-bueller-poster.jpg": "/popcornfilms/static/media/ferris-bueller-poster.10e27ab0e096f2aa34df.jpg",
+    "static/media/uncharted-poster.jpg": "/popcornfilms/static/media/uncharted-poster.48434cb16235ae43011a.jpg",
+    "static/media/the-edge-of-seventeen-poster.jpg": "/popcornfilms/static/media/the-edge-of-seventeen-poster.9e7d02badbd56290811c.jpg",
+    "static/media/dune-poster.jpg": "/popcornfilms/static/media/dune-poster.dc4e48a7666ef6426456.jpg",
+    "index.html": "/popcornfilms/index.html",
+    "main.2b74accf.css.map": "/popcornfilms/static/css/main.2b74accf.css.map",
+    "main.8a022611.js.map": "/popcornfilms/static/js/main.8a022611.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b74accf.css",
+    "static/js/main.8a022611.js"
+  ]
+}
