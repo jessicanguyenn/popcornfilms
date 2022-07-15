@@ -1,0 +1,120 @@
+/* font family*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  background-color: #023047;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+/*color theme (changed from default bootstrap colors) */
+.bg-color-1 {
+  background-color: #023047;
+}
+
+.bg-color-2 {
+  background-color: #8ECAE6;
+}
+
+.bg-color-3 {
+  background-color: #FB8500;
+}
+
+.bg-color-4 {
+  background-color: #FFB703;
+}
+
+.text-color-1 {
+  color: #023047;
+}
+
+.text-color-2 {
+  color: #8ECAE6;
+}
+
+.text-color-3 {
+  color: #FB8500;
+}
+
+.text-color-4 {
+  color: #FFB703;
+}
+
+/* nav bar */
+
+.navbar {
+  border-bottom: 2px solid #FB8500;
+}
+
+.nav-link:hover {
+  font-weight: bold;
+  color: #FFB703;
+}
+
+.nav-title:hover {
+  color: #FFB703;
+  font-weight: 900;
+}
+
+.nav-help-icon i:nth-child(2) {
+  display: none;
+}
+
+.nav-help-icon:hover i:nth-child(1) {
+  display: none;
+}
+
+.nav-help-icon:hover i:nth-child(2) {
+  display: block;
+}
+
+/* slideshow (carousel) */
+
+.slideshow-item {
+  max-height: max-content;
+  max-width: max-content;
+  margin: auto;
+}
+
+.screencap {
+  border: 5px solid #FB8500;
+}
+
+.screencap-caption {
+  border-radius: 5px;
+}
+
+.carousel-control-prev-icon {
+  background-color: #FB8500;
+}
+
+.carousel-control-next-icon {
+  background-color: #FB8500;
+}
+
+/* movies list */
+
+.movie-poster {
+  max-width: 100%;
+  max-height: 100%;
+  border: 2px solid #FB8500;
+  color: #FB8500;
+}
+
+.movie-container {
+  border: 2px solid #8ECAE6;
+}
+
+.dropdown-box {
+  background-color: #FFFFFF;
+  border: 1px solid #FB8500;
+  color: #023047;
+}
+
+.dropdown-option {
+  background-color: #FFFFFF;
+}
