@@ -15,7 +15,7 @@ const MovieList = ({movies}) => {
                             <Form.Select className={"dropdown-box form-select-sm"}>
                                 <option className="dropdown-option">Alphabetical</option>
                                 <option className="dropdown-option">Recently Released</option>
-                                <option selected className="dropdown-option">Trending</option>
+                                <option defaultValue className="dropdown-option">Trending</option>
                             </Form.Select>
                         </Form.Group>
                     </div>
@@ -25,7 +25,7 @@ const MovieList = ({movies}) => {
                     <div className="col-2">
                         <Form.Group className="mb-3">
                             <Form.Select className={"dropdown-box form-select-sm"}>
-                                <option selected className="dropdown-option">All</option>
+                                <option defaultValue className="dropdown-option">All</option>
                                 <option className="dropdown-option">Action</option>
                                 <option className="dropdown-option">Comedy</option>
                                 <option className="dropdown-option">Coming of Age</option>

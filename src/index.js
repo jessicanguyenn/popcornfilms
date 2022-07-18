@@ -4,8 +4,11 @@ import './index.css';
 import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const defaultJson = require('./en.json');
+
 root.render(
   <React.StrictMode>
-    <App />
+    <App json = {defaultJson}></App>
   </React.StrictMode>
 );
