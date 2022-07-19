@@ -1,4 +1,23 @@
 {
+    "navbar": {
+        "title": "POPCORNFILMS",
+        "films": "Films",
+        "account": "Login / Register",
+        "language": ["English", "Français"],
+        "contact": "Need help?"
+    },
+    "home": {
+        "title": "POPCORNFILMS",
+        "slogan": "All your favourite films in one place!",
+        "featured": "Featured films"
+    },
+    "movie_list": {
+        "films": "Films",
+        "sort": "Sort by:",
+        "sort_type": ["Alphabetical", "Recently Released", "Trending"],
+        "filter": "Filter by Genre:",
+        "filter_type": ["All", "Action", "Comedy", "Coming of Age", "Drama", "Romance"]
+    },
     "movies": [
         {
             "title": "Before Sunrise",

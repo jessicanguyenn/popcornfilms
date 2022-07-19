@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 * {
-  background-color: #023047;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
 }
@@ -55,32 +54,38 @@
   color: #FFB703;
 }
 
+.nav-link:focus {
+  color: #FB8500;
+}
+
 .nav-title:hover {
   color: #FFB703;
   font-weight: 900;
 }
 
-.nav-help-icon i:nth-child(2) {
+.nav-icon i:nth-child(2) {
   display: none;
 }
 
-.nav-help-icon:hover i:nth-child(1) {
+.nav-icon:hover i:nth-child(1) {
   display: none;
 }
 
-.nav-help-icon:hover i:nth-child(2) {
+.nav-icon:hover i:nth-child(2) {
   display: block;
+}
+
+.navbar-nav .show > .nav-link, .nav-link.active {
+  color: #FB8500;
+}
+
+.btn-lang {
+  border: none;
 }
 
 /* slideshow (carousel) */
 
 .slideshow-item {
-  max-height: max-content;
-  max-width: max-content;
-  margin: auto;
-}
-
-.screencap {
   border: 5px solid #FB8500;
 }
 
@@ -98,11 +103,38 @@
 
 /* movies list */
 
+.poster {
+  position: relative;
+  text-align: center;
+}
+
+.movie-poster-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+  background-color: transparent;
+  opacity: 0;
+}
+
+.poster:hover .movie-poster-text {
+  opacity: 1;
+}
+
 .movie-poster {
+  transition: .2s ease;
   max-width: 100%;
   max-height: 100%;
   border: 2px solid #FB8500;
   color: #FB8500;
+  opacity: 1;
+}
+
+.poster:hover .movie-poster {
+  background-color: #FB8500;
+  opacity: 0.2;
 }
 
 .movie-container {
@@ -117,4 +149,8 @@
 
 .dropdown-option {
   background-color: #FFFFFF;
+}
+
+.modalButton {
+  border: none;
 }
