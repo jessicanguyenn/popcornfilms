@@ -2,15 +2,15 @@
     "navbar": {
         "title": "POPCORNFILMS",
         "films": "Films",
-        "account": "Login / Register",
+        "account": "Connexion / S'inscrire",
         "language": ["English", "Français"],
-        "lang": "Language",
-        "contact": "Need help?"
+        "lang": "Langage",
+        "contact": "Besoin d'aide?"
     },
     "home": {
         "title": "POPCORNFILMS",
-        "slogan": "All your favourite films in one place!",
-        "featured": "Featured films"
+        "slogan": "Tous vos films préférés en un seul endroit !",
+        "featured": "Films en vedette"
     },
     "movie_list": {
         "films": "Films",

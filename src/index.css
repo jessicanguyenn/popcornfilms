@@ -154,3 +154,10 @@
 .modalButton {
   border: none;
 }
+
+/* movie info */
+
+.rating {
+  border: 2px solid #023047;
+  margin-left: 12px;
+}
