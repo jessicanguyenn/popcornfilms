@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/popcornfilms/static/css/main.a7d3c404.css",
-    "main.js": "/popcornfilms/static/js/main.7a2cc09c.js",
+    "main.js": "/popcornfilms/static/js/main.688c1e40.js",
     "static/media/the-texas-chainsaw-massacre-poster.jpg": "/popcornfilms/static/media/the-texas-chainsaw-massacre-poster.d8ca978aa3e787bf6bc1.jpg",
     "static/media/us-poster.jpg": "/popcornfilms/static/media/us-poster.dfc0ecea5d330a2e6291.jpg",
     "static/media/the-social-network-poster.jpg": "/popcornfilms/static/media/the-social-network-poster.cb16896387d42d5527e4.jpg",
@@ -20,10 +20,10 @@
     "static/media/dune-poster.jpg": "/popcornfilms/static/media/dune-poster.dc4e48a7666ef6426456.jpg",
     "index.html": "/popcornfilms/index.html",
     "main.a7d3c404.css.map": "/popcornfilms/static/css/main.a7d3c404.css.map",
-    "main.7a2cc09c.js.map": "/popcornfilms/static/js/main.7a2cc09c.js.map"
+    "main.688c1e40.js.map": "/popcornfilms/static/js/main.688c1e40.js.map"
   },
   "entrypoints": [
     "static/css/main.a7d3c404.css",
-    "static/js/main.7a2cc09c.js"
+    "static/js/main.688c1e40.js"
   ]
 }
