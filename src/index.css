@@ -83,6 +83,14 @@
   border: none;
 }
 
+.text-collapse{
+  font-style: normal;
+}
+
+.nav-item a {
+  text-decoration: none;
+}
+
 /* slideshow (carousel) */
 
 .slideshow-item {
