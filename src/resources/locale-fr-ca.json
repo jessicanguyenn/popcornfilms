@@ -2,26 +2,38 @@
     "navbar": {
         "title": "POPCORNFILMS",
         "films": "Films",
-        "account": "Connexion / S'inscrire",
+        "account": ["Connexion / S'inscrire", "Profile"],
         "language": ["English", "Français"],
         "lang": "Langage",
-        "contact": "Besoin d'aide?"
+        "contact": "Besoin d'aide?",
+        "search": "Rechercher un film..."
     },
     "home": {
         "title": "POPCORNFILMS",
-        "slogan": "Tous vos films préférés en un seul endroit !",
+        "slogan": "Tous vos films préférés en un seul endroit ! Acheter ou louer ? Votre choix à un prix bas !",
         "featured": "Films en vedette"
     },
     "movie_list": {
         "films": "Films",
+        "subtitle": "Faites votre choix parmi ces choix de films !",
         "sort": "Sort by:",
         "sort_type": ["Alphabetical", "Recently Released", "Trending"],
         "filter": "Filter by Genre:",
-        "filter_type": ["All", "Action", "Comedy", "Coming of Age", "Drama", "Romance"]
+        "filter_type": ["All", "Action", "Adventure", "Biography", "Comedy", "Coming-of-Age", "Drama", "Fantasy", "Horror", "Mystery", "Romance", "Science Fiction", "Slasher", "Superhero", "Thriller", "Western"]
     },
     "movie_info_text": {
         "info": ["Genre: ", "Director: ", "Cast: "]
     },
+    "footer": {
+        "info": ["Need Help?", "Visit our ", "FAQ", " page", "or", "contact us at ", "support@popcornfilms.ca"],
+        "brand": ["popcornfilms", "2022"]
+    },
+    "account": {
+        "info": ["Join us today! It only takes a few seconds and you can start watching!"],
+        "login": ["Login", "Email address: ", "Enter your email address", "Password: ", "Enter your password", "Show password"],
+        "create": ["Create an account", "Email address: ", "Enter your email address", "Password: ", "Enter your password", "Show password", "Re-enter your password: ", "I would like to receive promotions and updates to my email.", "I agree to the terms and conditions.", "Create an account"]
+    },
+    "contact": ["Questions? Feel free to ask us!", "To:", "Message:", "Close", "Send message"],
     "movies": [
         {
             "title": "Before Sunrise",
@@ -55,7 +67,7 @@
             "length": "156 minutes",
             "director": "Denis Villeneuve",
             "cast": "Timothée Chalamet, Rebecca Ferguson, Oscar Isaac, Zendaya, ...",
-            "genre": "Action, Adventure, Drama",
+            "genre": "Action, Adventure, Drama, Science Fiction",
             "year": "2021",
             "rating": "PG-13",
             "screencap": "./assets/dune-screencap.jpg",
@@ -68,7 +80,7 @@
             "length": "148 minutes",
             "director": "Jon Watts",
             "cast": "Tom Holland, Zendaya, Benedict Cumberbatch, Jacob Batalon, ...",
-            "genre": "Action, Adventure, Fantasy",
+            "genre": "Action, Adventure, Fantasy, Superhero",
             "year": "2021",
             "rating": "PG-13",
             "screencap": "",
@@ -89,6 +101,19 @@
             "id": 5
         },
         {
+            "title": "Lady Bird",
+            "description": "In 2002, an artistically inclined seventeen-year-old girl comes of age in Sacramento, California.",
+            "length": "94 minutes",
+            "director": "Greta Gerwig",
+            "cast": "Saoirse Ronan, Laurie Metcalf, Tracy Letts, Lucas Hedges, Timothée Chalamet, ...",
+            "genre": "Comedy, Coming-of-Age, Drama",
+            "year": "2017",
+            "rating": "R",
+            "screencap": "",
+            "poster": "./assets/lady-bird-poster.jpg",
+            "id": 6
+        },
+        {
             "title": "The Social Network",
             "description": "As Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook, he is sued by the twins who claimed he stole their idea, and by the co-founder who was later squeezed out of the business.",
             "length": "120 minutes",
@@ -99,7 +124,20 @@
             "rating": "PG-13",
             "screencap": "",
             "poster": "./assets/the-social-network-poster.jpg",
-            "id": 6
+            "id": 7
+        },
+        {
+            "title": "Rebel Without a Cause",
+            "description": "A rebellious young man with a troubled past comes to a new town, finding friends and enemies.",
+            "length": "111 minutes",
+            "director": "Nicholas Ray",
+            "cast": "James Dean, Natalie Wood, Sal Mineo, Jim Backus, ...",
+            "genre": "Coming-of-Age, Drama",
+            "year": "1955",
+            "rating": "PG-13",
+            "screencap": "",
+            "poster": "./assets/rebel-without-a-cause-poster.jpg",
+            "id": 8
         },
         {
             "title": "Uncharted",
@@ -112,7 +150,20 @@
             "rating": "PG-13",
             "screencap": "",
             "poster": "./assets/uncharted-poster.jpg",
-            "id": 7
+            "id": 9
+        },
+        {
+            "title": "Clueless",
+            "description": "Shallow, rich and socially successful Cher is at the top of her Beverly Hills high school's pecking scale. Seeing herself as a matchmaker, Cher first coaxes two teachers into dating each other.",
+            "length": "97 minutes",
+            "director": "Amy Heckerling",
+            "cast": "Alicia Silverstone, Stacey Dash, Brittany Murphy, Paul Rudd, ...",
+            "genre": "Comedy, Coming-of-Age, Romance",
+            "year": "1995",
+            "rating": "PG-13",
+            "screencap": "",
+            "poster": "./assets/clueless-poster.jpg",
+            "id": 10
         },
         {
             "title": "The Texas Chain Saw Massacre",
@@ -120,12 +171,25 @@
             "length": "83 minutes",
             "director": "Tobe Hooper",
             "cast": "Marilyn Burns, Paul A. Partain, Edwin Neal, ...",
-            "genre": "Horror",
+            "genre": "Horror, Slasher",
             "year": "1974",
             "rating": "R",
             "screencap": "",
             "poster": "./assets/the-texas-chainsaw-massacre-poster.jpg",
-            "id": 8
+            "id": 11
+        },
+        {
+            "title": "The Sisterhood of the Traveling Pants",
+            "description": "Four best girlfriends hatch a plan to stay connected with one another as their lives start off in different directions: they pass around a pair of secondhand jeans that fits each of their bodies perfectly.",
+            "length": "119 minutes",
+            "director": "Ken Kwapis",
+            "cast": "Amber Tamblyn, America Ferrera, Blake Lively, Alexis Bledel, ...",
+            "genre": "Comedy, Drama, Romance",
+            "year": "2005",
+            "rating": "PG",
+            "screencap": "",
+            "poster": "./assets/sisterhood-of-the-traveling-pants-poster.jpg",
+            "id": 12
         },
         {
             "title": "Us",
@@ -138,7 +202,7 @@
             "rating": "R",
             "screencap": "",
             "poster": "./assets/us-poster.jpg",
-            "id": 9
+            "id": 13
         },
         {
             "title": "Brokeback Mountain",
@@ -146,12 +210,12 @@
             "length": "134 minutes",
             "director": "Ang Lee",
             "cast": "Heath Ledger, Jake Gyllenhaal, Linda Cardellini, Anna Faris, ...",
-            "genre": "Drama, Romance",
+            "genre": "Drama, Romance, Western",
             "year": "2005",
             "rating": "R",
             "screencap": "",
             "poster": "./assets/brokeback-mountain-poster.jpg",
-            "id": 10
+            "id": 14
         },
         {
             "title": "The Edge of Seventeen",
@@ -159,12 +223,12 @@
             "length": "104 minutes",
             "director": "Kelly Fremon Craig",
             "cast": "Hailee Steinfeld, Woody Harrelson, Kyra Sedgwick, Haley Lu Richardson, ...",
-            "genre": "Comedy, Drama",
+            "genre": "Comedy, Coming-of-Age, Drama",
             "year": "2016",
             "rating": "R",
             "screencap": "",
             "poster": "./assets/the-edge-of-seventeen-poster.jpg",
-            "id": 11
+            "id": 15
         },
         {
             "title": "The Notebook",
@@ -177,7 +241,7 @@
             "rating": "PG-13",
             "screencap": "",
             "poster": "./assets/the-notebook-poster.jpg",
-            "id": 12
+            "id": 16
         },
         {
             "title": "Mean Girls",
@@ -190,7 +254,7 @@
             "rating": "PG-13",
             "screencap": "",
             "poster": "./assets/mean-girls-poster.jpg",
-            "id": 13
+            "id": 17
         }
     ]
 }

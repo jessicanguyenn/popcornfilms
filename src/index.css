@@ -91,6 +91,10 @@
   text-decoration: none;
 }
 
+.lang-menu {
+  border: 1px solid #FB8500;
+}
+
 /* slideshow (carousel) */
 
 .slideshow-item {
@@ -107,6 +111,18 @@
 
 .carousel-control-next-icon {
   background-color: #FB8500;
+}
+
+.carousel-caption {
+  max-width: 100%;
+  width:100%;
+  bottom: 0;
+  height: 20%;
+  background-color: white;
+  left: 0;
+  border-radius: 0px;
+  opacity: 0.6;
+  color:#023047;
 }
 
 /* movies list */
@@ -168,4 +184,68 @@
 .rating {
   border: 2px solid #023047;
   margin-left: 12px;
+}
+
+/* footer */
+
+.footer {
+  border-top: 2px solid #FB8500;
+}
+
+.footer-text:hover {
+  color: #FFB703;
+}
+
+/* account */
+
+.btn-account {
+  background-color: #FB8500;
+  border: 1px solid #FFB703;
+}
+
+.btn-account:hover {
+  background-color: #FFB703;
+  border: 1px solid #FFB703;
+  font-weight: bold;
+}
+
+.btn-account:focus {
+  background-color: #FFB703;
+  border: 1px solid #FFB703;
+  font-weight: bold;
+}
+
+.btn-account:active {
+  background-color: #FB8500;
+  border: 1px solid #FFB703;
+}
+
+/* contact */
+
+.modal-backdrop {
+  z-index: -1;
+}
+
+.btn-contact {
+  background-color: #FB8500;
+  border: none;
+  color:#023047;
+}
+
+.btn-contact:hover {
+  background-color: #FFB703;
+  color: #023047;
+  border: none;
+}
+
+.btn-contact:focus {
+  background-color: #FFB703;
+  color: #023047;
+  border: none;
+}
+
+.btn-contact:active {
+  background-color: #FFB703;
+  color: #023047;
+  border: none;
 }

@@ -18,7 +18,7 @@ const Home = ({movies, home}) => {
                             {movies.map((movie) => (
                                 <Carousel.Item key = {movie.id}>
                                     <img className={"d-block w-100"} src={require(`${movie.screencap}`)} alt={movie.title + " (" + movie.year + ")"}/>
-                                    <Carousel.Caption className="screencap-caption">
+                                    <Carousel.Caption className="screencap-caption bg-color-1">
                                         <h3 className="fst-italic">{movie.title + " (" + movie.year + ")"}</h3>
                                     </Carousel.Caption>
                                 </Carousel.Item>
