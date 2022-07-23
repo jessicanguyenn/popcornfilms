@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Navbar } from "react-bootstrap";
 import { Link } from 'react-router-dom';
 
 const Account = ({accountItems, lang}) => {
@@ -31,7 +30,7 @@ const Account = ({accountItems, lang}) => {
     }
 
     return ( 
-        <div className="container">
+        <div className="container mt-5">
             <div className="row justify-content-between p-5">
                 <div className="text-center text-color-3 h2 fst-italic pb-5">
                     {accountItems.info}
@@ -93,8 +92,7 @@ const Account = ({accountItems, lang}) => {
                         </div>
                         <div className="py-2"></div>
                         <div className="text-center">
-                            <Link to={"/" + lang + "/loggedOn"} type="submit" className="btn btn-account text-color-1">{accountItems.create[0]}
-                            </Link>
+                            <Link to={"/" + lang + "/loggedOn"} type="submit" className="btn btn-account text-color-1">{accountItems.create[0]}</Link>
                         </div>
                     </form>
                 </div>

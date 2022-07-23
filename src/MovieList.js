@@ -2,9 +2,7 @@ import Form from 'react-bootstrap/Form';
 import MovieInfo from './MovieInfo';
 import {useState} from 'react';
 
-const MovieList = ({movies, movie_list, movie_info_text}) => {
-
-    const [movie_info, setmovie_info] = useState(movies[0]);
+const MovieList = ({movies, movie_list, movie_info_text, lang, loggedOn, movie_info, setmovie_info}) => {
 
     const [moviesList, setmoviesList] = useState(movies);
 
@@ -32,7 +30,7 @@ const MovieList = ({movies, movie_list, movie_info_text}) => {
         const copy = [...movies];
         let list = [];
 
-        if (value === 'All') {
+        if (value === 'All' || value === 'Tout') {
             list = copy;
         }
 
@@ -96,7 +94,7 @@ const MovieList = ({movies, movie_list, movie_info_text}) => {
                 <div className={"row px-5 py-3 my-4 mx-3"}>
                     {moviesList.map((movie) => {
                         return <div className="col-lg-3 col-md-4 col-sm-6" key = {movie.id}>
-                            <button type="button" className="btn modalButton" data-bs-toggle="modal" data-bs-target="#movieInfoModal" onClick={() => setmovie_info(movie)}>
+                            <button type="button" className="btn modalButton" data-bs-toggle="modal" data-bs-target="#movieInfoModal" onClick={() =>{setmovie_info(movie)}}>
                                 <div className="poster">
                                     <img className="movie-poster" src={require(`${movie.poster}`)} title={movie.title + " (" + movie.year + ")"} alt={movie.title + " (" + movie.year + ")"}/>
                                     <div className="text-center text-color-3 fst-italic small movie-poster-text">{movie.title + " (" + movie.year + ")"}</div>
@@ -109,7 +107,7 @@ const MovieList = ({movies, movie_list, movie_info_text}) => {
                     })}
                 </div>
             </div>
-            <MovieInfo movie_info = {movie_info} movie_info_text = {movie_info_text}></MovieInfo>
+            <MovieInfo movie_info = {movie_info} movie_info_text = {movie_info_text} lang = {lang} loggedOn = {loggedOn}></MovieInfo>
         </div>
      );
 }

@@ -1,4 +1,7 @@
-const MovieInfo = ({movie_info, movie_info_text}) => {
+import { Link } from 'react-router-dom';
+
+const MovieInfo = ({movie_info, movie_info_text, lang, loggedOn}) => {
+
     return ( 
         <div className="modal fade" id="movieInfoModal" tabIndex="-1" aria-labelledby="movieInfoModalLabel" aria-hidden="true">
             <div className="modal-dialog modal-lg">
@@ -21,6 +24,58 @@ const MovieInfo = ({movie_info, movie_info_text}) => {
                                 <div className="container pb-2"><span className="fw-bold">{movie_info_text.info[0]}</span>{movie_info.genre}</div>
                                 <div className="container pb-2"><span className="fw-bold">{movie_info_text.info[1]}</span>{movie_info.director}</div>
                                 <div className="container pb-2"><span className="fw-bold">{movie_info_text.info[2]}</span>{movie_info.cast}</div>
+                                <div className="row pt-4 justify-content-center">
+                                    {loggedOn &&
+                                    <div className="row pt-4 justify-content-center">
+                                        <div className="col text-center">
+                                            <button type="button" className="btn btn-account text-color-1 fw-bold" data-bs-dismiss="modal">{movie_info_text.info[3]} 
+                                            <div className="small">
+                                                <div className="small">
+                                                    <div className="small">{movie_info_text.info[4]}</div>
+                                                </div>
+                                            </div></button>
+                                        </div>
+                                        <div className="col text-center">
+                                            <button type="button" className="btn btn-account text-color-1 fw-bold" data-bs-dismiss="modal">{movie_info_text.info[5]}
+                                            <div className="small">
+                                                <div className="small"><div className="small">
+                                                    <div className="small">{movie_info_text.info[6]}</div>
+                                                </div>
+                                            </div>
+                                            </div></button>
+                                        </div>
+                                    </div>}
+                                    {!loggedOn && 
+                                    <div className="row pt-2 justify-content-center">
+                                        <div className="row">
+                                            <div className="small">
+                                                <div className="small text-center text-color-1">{movie_info_text.info[7]}</div>
+                                            </div>
+                                        </div>
+                                        <div className="row">
+                                            <div className="col text-center">
+                                                <button type="button" className="btn btn-account text-color-1 fw-bold" data-bs-dismiss="modal">
+                                                    <Link to={"/" + lang + "/account"} className="text-color-1 fw-bold">{movie_info_text.info[3]}
+                                                    <div className="small">
+                                                        <div className="small">
+                                                            <div className="small">{movie_info_text.info[4]}</div>
+                                                        </div>
+                                                    </div></Link>
+                                                </button>
+                                            </div>
+                                            <div className="col text-center">
+                                                <button type="button" className="btn btn-account text-color-1 fw-bold" data-bs-dismiss="modal">
+                                                    <Link to={"/" + lang + "/account"} className="text-color-1 fw-bold">{movie_info_text.info[5]}
+                                                    <div className="small">
+                                                        <div className="small">
+                                                            <div className="small">{movie_info_text.info[6]}</div>
+                                                        </div>
+                                                    </div></Link>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>}
+                                </div>
                             </div>
                         </div>
                     </div>

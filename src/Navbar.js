@@ -1,13 +1,28 @@
 import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
 import Contact from './Contact';
+import MovieInfo from './MovieInfo';
 
-const Navbar = ({navbarItems , lang, account, loggedOn, contactInfo, movies}) => {
+const Navbar = ({navbarItems , lang, account, loggedOn, contactInfo, movies, movie_info_text, movie_info, setmovie_info}) => {
+
+    const getMovie = () => {
+        let value = document.getElementById('dataList').value;
+        let list = [];
+
+        for (let i = 0; i < movies.length; i++) {
+            if (movies[i].title.toLowerCase().includes(value)) {
+                list.push(movies[i]);
+            }
+        }
+        if (list.length === 1) {
+            setmovie_info(list[0]);
+        }
+        document.getElementById('dataList').value = "";
+    }
 
     return ( 
-        // navbar
-        <div>
-            <nav className={"navbar navbar-expand-md bg-color-1 sticky-top"}>
+    // navbar
+    <div>
+        <nav className={"navbar navbar-expand-md bg-color-1 sticky-top"}>
             <a href={"https://jessicanguyenn.github.io/popcornfilms/#/" + lang} className="navbar-brand">
                 <span className="text-color-3 px-3 nav-title fw-900" title="Home">
                     {navbarItems.title}
@@ -18,12 +33,13 @@ const Navbar = ({navbarItems , lang, account, loggedOn, contactInfo, movies}) =>
             </button>
             <div className={"collapse navbar-collapse justify-content-end px-3 align-end"} id="main-nav">
                 <div className="navbar-nav">
-                    <input class="form-control form-control-sm" list="datalistOptions" id="dataList" placeholder={navbarItems.search}/>
+                    <input className="form-control form-control-sm" list="datalistOptions" id="dataList" placeholder={navbarItems.search}/>
                     <datalist id="datalistOptions">
                         {movies.map((movie) => {
                             return <option value={movie.title.toLowerCase()} key={movie.id}/>
                         })}
                     </datalist>
+                    <button className="btn btn-search btn-sm mx-2 modalButton" data-bs-toggle="modal" data-bs-target="#movieInfoModal" type="button" onClick={getMovie}>{navbarItems.searchText}</button>
                 </div>
                 <ul className="navbar-nav">
                     <li className="nav-item">
@@ -71,6 +87,8 @@ const Navbar = ({navbarItems , lang, account, loggedOn, contactInfo, movies}) =>
             </div>
         </nav>
         <Contact contactInfo = {contactInfo} lang = {lang}></Contact>
+        <MovieInfo movie_info = {movie_info} lang = {lang} movie_info_text = {movie_info_text} loggedOn = {loggedOn}></MovieInfo>
+        
     </div>
     );
 }

@@ -47,6 +47,9 @@
 
 .navbar {
   border-bottom: 2px solid #FB8500;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 .nav-link:hover {
@@ -93,6 +96,30 @@
 
 .lang-menu {
   border: 1px solid #FB8500;
+}
+
+.btn-search {
+  background-color: #FB8500;
+  border: none;
+  color:#023047;
+}
+
+.btn-search:hover {
+  background-color: #FFB703;
+  color: #023047;
+  border: none;
+}
+
+.btn-search:focus {
+  background-color: #FFB703;
+  color: #023047;
+  border: none;
+}
+
+.btn-search:active {
+  background-color: #FFB703;
+  color: #023047;
+  border: none;
 }
 
 /* slideshow (carousel) */
@@ -196,6 +223,10 @@
   color: #FFB703;
 }
 
+.btn a {
+  text-decoration: none;
+}
+
 /* account */
 
 .btn-account {
@@ -221,10 +252,6 @@
 }
 
 /* contact */
-
-.modal-backdrop {
-  z-index: -1;
-}
 
 .btn-contact {
   background-color: #FB8500;

@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 const Home = ({movies, home}) => {
 
     return ( 
-        <div className="container w-100" id="home">
+        <div className="container w-100 mt-5" id="home">
             <div className={"container pt-5 pb-3"}>
                 <h1 className={"fw-900 text-color-3 text-center"}>{home.title}</h1>
             </div>

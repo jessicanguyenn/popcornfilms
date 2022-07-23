@@ -1,6 +1,7 @@
-import { HashLink } from "react-router-hash-link";
+import { Link } from 'react-router-dom';
 
 const Contact = ({contactInfo, lang}) => {
+
     return (
         <div>
             <div className="modal fade" id="contactModal" tabIndex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
@@ -24,7 +25,7 @@ const Contact = ({contactInfo, lang}) => {
                         </div>
                         <div className="modal-footer">
                             <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">{contactInfo[3]}</button>
-                            <a href={"https://jessicanguyenn.github.io/popcornfilms/#/" + lang} type="button" className="btn btn-contact">{contactInfo[4]}</a>
+                            <button type="button" data-bs-dismiss="modal" className="btn btn-contact">{contactInfo[4]}</button>
                         </div>
                     </div>
                 </div>

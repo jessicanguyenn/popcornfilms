@@ -6,6 +6,7 @@
         "language": ["English", "Français"],
         "lang": "Language",
         "contact": "Need help?",
+        "searchText": "Search",
         "search": "Search for a film..."
     },
     "home": {
@@ -22,7 +23,8 @@
         "filter_type": ["All", "Action", "Adventure", "Biography", "Comedy", "Coming-of-Age", "Drama", "Fantasy", "Horror", "Mystery", "Romance", "Science Fiction", "Slasher", "Superhero", "Thriller", "Western"]
     },
     "movie_info_text": {
-        "info": ["Genre: ", "Director: ", "Cast: "]
+        "info": ["Genre: ", "Director: ", "Cast: ", "Buy", "$8", "Rent", "$3 / 4 days", "You need to have an account to buy or rent the film."],
+        "confirmInfo": [" this film?", "Yes", "No"]
     },
     "footer": {
         "info": ["Need Help?", "Visit our ", "FAQ", " page", "or", "contact us at ", "support@popcornfilms.ca"],
