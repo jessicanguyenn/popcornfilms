@@ -1,6 +1,10 @@
 import Contact from "./Contact";
 
-const Footer = ({footerItems, lang, contactInfo}) => {
+const Footer = (props) => {
+
+    const json = props.json;
+    const footerItems = json.footerItems;
+
     return ( 
         <div className={"bg-color-1 mt-5 footer"} id="contact">
             <div className="container p-3 text-center">
@@ -18,7 +22,7 @@ const Footer = ({footerItems, lang, contactInfo}) => {
                     </div>
                 </div>
             </div>
-            <Contact contactInfo = {contactInfo} lang = {lang}></Contact>
+            <Contact contactInfo = {json.contactInfo}></Contact>
         </div>
      );
 }

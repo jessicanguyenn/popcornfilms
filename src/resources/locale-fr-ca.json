@@ -1,5 +1,5 @@
 {
-    "navbar": {
+    "navbarItems": {
         "title": "POPCORNFILMS",
         "films": "Films",
         "account": ["Connexion / S'inscrire", "Profile"],
@@ -9,33 +9,33 @@
         "searchText": "Rechercher",
         "search": "Rechercher un film..."
     },
-    "home": {
+    "homeItems": {
         "title": "POPCORNFILMS",
         "slogan": "Tous vos films préférés en un seul endroit ! Acheter ou louer ? Votre choix à un prix bas !",
         "featured": "Films en vedette"
     },
-    "movie_list": {
+    "movieList": {
         "films": "Films",
         "subtitle": "Faites votre choix parmi ces choix de films !",
         "sort": "Trier par :",
-        "sort_type": ["Alphabétique", "Récemment publié", "Tendance"],
+        "sortType": ["Alphabétique", "Récemment publié", "Tendance"],
         "filter": "Filtrer par genre :",
-        "filter_type": ["Tout", "Action", "Aventure", "Biographie", "Comédie", "Passage à l'âge adulte", "Drame", "Fantaisie", "Horreur", "Mystère", "Romance", "Science Fiction", "Slasher", "Super-héros", "Thriller", "Western"]
+        "filterType": ["Tout", "Action", "Aventure", "Biographie", "Comédie", "Passage à l'âge adulte", "Drame", "Fantaisie", "Horreur", "Mystère", "Romance", "Science Fiction", "Slasher", "Super-héros", "Thriller", "Western"]
     },
-    "movie_info_text": {
+    "movieInfoText": {
         "info": ["Genre : ", "Réalisateur : ", "Acteurs principaux : ", "Acheter", "8 $", "Louer", "3 $ / 4 jours", "Vous devez avoir un compte pour acheter ou louer le film."],
         "confirmInfo": [" ce film ?", "Oui", "Non"]
     },
-    "footer": {
+    "footerItems": {
         "info": ["Besoin d'aide ?", "Visitez notre ", "FAQ", " page", "ou", "contactez-nous à ", "support@popcornfilms.ca"],
         "brand": ["popcornfilms", "2022"]
     },
-    "account": {
+    "accountItems": {
         "info": ["Rejoignez-nous aujourd'hui ! En quelques secondes et vous pouvez commencer à regarder !"],
         "login": ["Connexion", "Adresse e-mail : ", "Entrez votre adresse email", "Mot de passe : ", "Entrez votre mot de passe", "Montrer le mot de passe"],
         "create": ["Créer un compte", "Adresse e-mail : ", "Entrez votre adresse email : ", "Mot de passe : ", "Entrez votre mot de passe", "Montrer le mot de passe", "Entrez à nouveau votre mot de passe : ", "Je souhaite recevoir des promotions et des mises à jour à mon e-mail.", "J'accepte les termes et conditions.", "Créer un compte"]
     },
-    "contact": ["Avez-vous des questions ? N'hésitez pas à nous demander !", "À :", "Message:", "Fermer", "Envoyer le message"],
+    "contactInfo": ["Avez-vous des questions ? N'hésitez pas à nous demander !", "À :", "Message:", "Fermer", "Envoyer le message"],
     "movies": [
         {
             "title": "Before Sunrise",

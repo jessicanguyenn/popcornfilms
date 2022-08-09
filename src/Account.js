@@ -1,12 +1,21 @@
 import { useState } from "react";
 import { Link } from 'react-router-dom';
+import { useHistory } from "react-router-dom";
 
-const Account = ({accountItems, lang}) => {
+const Account = (props) => {
+
+    const json = props.json;
+    const accountItems = json.accountItems;
+
+    // set state across components
+    const setLoggedOn = props.setLoggedOn;
 
     const [loginPasswordShown, setLoginPasswordShown] = useState("password");
     const [createPasswordShown, setCreatePasswordShown] = useState("password");
     const [passwordValid, setPasswordValid] = useState("");
+    const history = useHistory();
 
+    // toggle show/hide password
     const toggleLoginPassword = () => {
         if (loginPasswordShown === 'password') {
             setLoginPasswordShown("text");
@@ -24,9 +33,37 @@ const Account = ({accountItems, lang}) => {
         }
     };
 
+    // check if password reentry is same as password
     const reenterPasswordValid = () => {
         var password = document.getElementById('createPassword').value;
         setPasswordValid(password);
+    }
+
+    // user log in
+    const login = () => {
+
+        const loginEmail = document.getElementById('loginEmail');
+        const loginPassword = document.getElementById('loginPassword');
+
+        if (loginEmail.checkValidity() && loginPassword.checkValidity()) {
+            setLoggedOn(true);
+            history.push('/');
+        }
+
+    }
+
+    // user sign up
+    const signup = () => {
+
+        const createEmail = document.getElementById('createEmail');
+        const createPassword = document.getElementById('createPassword');
+        const createPassword2 = document.getElementById('createPassword2');
+        const tcCheck = document.getElementById('tcCheck');
+
+        if (createEmail.checkValidity() && createPassword.checkValidity() && createPassword2.checkValidity() && tcCheck.checkValidity()) {
+            setLoggedOn(true);
+            history.push('/');
+        }
     }
 
     return ( 
@@ -39,7 +76,7 @@ const Account = ({accountItems, lang}) => {
                     <div className="text-center fw-bold h1 py-2">
                         {accountItems.login[0]}
                     </div>
-                    <form className="needs-validation" noValidate>
+                    <form className="needs-validation">
                         <div className="mb-3 pt-2">
                             <label htmlFor="loginEmail" className="form-label fw-bold">{accountItems.login[1]}</label>
                             <input type="email" className="form-control" id="loginEmail" placeholder={accountItems.login[2]} required/>
@@ -55,7 +92,7 @@ const Account = ({accountItems, lang}) => {
                         </div>
                         <div className="py-2"></div>
                         <div className="text-center">
-                            <Link to={"/" + lang + "/loggedOn"} type="submit" className="btn btn-account text-color-1">{accountItems.login[0]}</Link>
+                            <button type="submit" id="login" className="btn btn-account text-color-1" onClick={login}>{accountItems.login[0]}</button>
                         </div>
                     </form>
                 </div>
@@ -92,7 +129,7 @@ const Account = ({accountItems, lang}) => {
                         </div>
                         <div className="py-2"></div>
                         <div className="text-center">
-                            <Link to={"/" + lang + "/loggedOn"} type="submit" className="btn btn-account text-color-1">{accountItems.create[0]}</Link>
+                            <button type="submit" className="btn btn-account text-color-1" onClick={signup}>{accountItems.create[0]}</button>
                         </div>
                     </form>
                 </div>

@@ -1,6 +1,7 @@
-import { Link } from 'react-router-dom';
 
-const Contact = ({contactInfo, lang}) => {
+const Contact = (props) => {
+
+    const contactInfo = props.contactInfo;
 
     return (
         <div>

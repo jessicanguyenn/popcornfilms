@@ -1,5 +1,5 @@
 {
-    "navbar": {
+    "navbarItems": {
         "title": "POPCORNFILMS",
         "films": "Films",
         "account": ["Login / Register", "Profile"],
@@ -9,33 +9,33 @@
         "searchText": "Search",
         "search": "Search for a film..."
     },
-    "home": {
+    "homeItems": {
         "title": "POPCORNFILMS",
         "slogan": "All your favourite films in one place! Buy or rent? Your choice at a low price!",
         "featured": "Featured films"
     },
-    "movie_list": {
+    "movieList": {
         "films": "Films",
         "subtitle": "Browse among these selection of films!",
         "sort": "Sort by:",
-        "sort_type": ["Alphabetical", "Recently Released", "Trending"],
+        "sortType": ["Alphabetical", "Recently Released", "Trending"],
         "filter": "Filter by Genre:",
-        "filter_type": ["All", "Action", "Adventure", "Biography", "Comedy", "Coming-of-Age", "Drama", "Fantasy", "Horror", "Mystery", "Romance", "Science Fiction", "Slasher", "Superhero", "Thriller", "Western"]
+        "filterType": ["All", "Action", "Adventure", "Biography", "Comedy", "Coming-of-Age", "Drama", "Fantasy", "Horror", "Mystery", "Romance", "Science Fiction", "Slasher", "Superhero", "Thriller", "Western"]
     },
-    "movie_info_text": {
+    "movieInfoText": {
         "info": ["Genre: ", "Director: ", "Cast: ", "Buy", "$8", "Rent", "$3 / 4 days", "You need to have an account to buy or rent the film."],
         "confirmInfo": [" this film?", "Yes", "No"]
     },
-    "footer": {
+    "footerItems": {
         "info": ["Need Help?", "Visit our ", "FAQ", " page", "or", "contact us at ", "support@popcornfilms.ca"],
         "brand": ["popcornfilms", "2022"]
     },
-    "account": {
+    "accountItems": {
         "info": ["Join us today! It only takes a few seconds and you can start watching!"],
         "login": ["Login", "Email address: ", "Enter your email address", "Password: ", "Enter your password", "Show password"],
         "create": ["Create an account", "Email address: ", "Enter your email address", "Password: ", "Enter your password", "Show password", "Re-enter your password: ", "I would like to receive promotions and updates to my email.", "I agree to the terms and conditions.", "Create an account"]
     },
-    "contact": ["Questions? Feel free to ask us!", "To:", "Message:", "Close", "Send message"],
+    "contactInfo": ["Questions? Feel free to ask us!", "To:", "Message:", "Close", "Send message"],
     "movies": [
         {
             "title": "Before Sunrise",
